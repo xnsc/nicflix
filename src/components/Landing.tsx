@@ -1,10 +1,21 @@
 import { ReactElement } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import nicflixLogo from "./images/nicflix-logo.png";
 import cat1 from "./images/cat1.jpg";
 import cat2 from "./images/cat2.jpg";
 
 const Landing = (): ReactElement => {
+	const navigate = useNavigate();
+
+	const navToPortfolio = () => {
+		navigate("/portfolio");
+	};
+
+	const navToRecommendations = () => {
+		navigate("/browse");
+	};
+
 	return (
 		<Container
 			fluid
@@ -28,7 +39,8 @@ const Landing = (): ReactElement => {
 						<img
 							src={cat1}
 							alt="cat-through-fence"
-							style={{ width: "175px", height: "175px" }}
+							style={{ width: "175px", height: "175px", cursor: "pointer" }}
+							onClick={navToPortfolio}
 						/>
 						<p className="mt-2">Future Employers</p>
 					</Col>
@@ -36,7 +48,8 @@ const Landing = (): ReactElement => {
 						<img
 							src={cat2}
 							alt="cat-sleeping"
-							style={{ width: "175px", height: "175px" }}
+							style={{ width: "175px", height: "175px", cursor: "pointer" }}
+							onClick={navToRecommendations}
 						/>
 						<p className="mt-2">Friends & Fam</p>
 					</Col>
