@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
 import { Container } from "react-bootstrap";
+import RecsNavbar from "./RecsNavbar";
 
 const Recommendations = (): ReactElement => {
 	return (
-		<Container
-			fluid
-			className="bg-dark text-light d-flex align-items-center justify-content-center vh-100"
-		></Container>
+		<Container fluid className="bg-dark text-light vh-100">
+			<RecsNavbar />
+		</Container>
 	);
 };
 
