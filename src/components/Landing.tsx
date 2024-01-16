@@ -37,6 +37,7 @@ const Landing = (): ReactElement => {
 				<Row>
 					<Col className="text-center">
 						<img
+							className="rounded"
 							src={cat1}
 							alt="cat-through-fence"
 							style={{ width: "175px", height: "175px", cursor: "pointer" }}
@@ -46,6 +47,7 @@ const Landing = (): ReactElement => {
 					</Col>
 					<Col className="text-center">
 						<img
+							className="rounded"
 							src={cat2}
 							alt="cat-sleeping"
 							style={{ width: "175px", height: "175px", cursor: "pointer" }}
