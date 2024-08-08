@@ -9,11 +9,11 @@ const Landing = (): ReactElement => {
 	const navigate = useNavigate();
 
 	const navToPortfolio = () => {
-		navigate("/portfolio");
+		navigate("/nicflix/portfolio");
 	};
 
 	const navToRecommendations = () => {
-		navigate("/browse");
+		navigate("/nicflix/browse");
 	};
 
 	return (

@@ -9,9 +9,9 @@ const App = () => {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Landing />} />
-				<Route path="/portfolio" element={<Portfolio />} />
-				<Route path="/browse" element={<Recommendations />} />
+				<Route path="/nicflix" element={<Landing />} />
+				<Route path="/nicflix/portfolio" element={<Portfolio />} />
+				<Route path="/nicflix/browse" element={<Recommendations />} />
 			</Routes>
 		</Router>
 	);
