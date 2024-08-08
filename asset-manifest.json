@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/nicflix/static/css/main.62d3213f.css",
+    "main.js": "/nicflix/static/js/main.bb727324.js",
+    "static/js/787.8d32391b.chunk.js": "/nicflix/static/js/787.8d32391b.chunk.js",
+    "static/media/cat2.jpg": "/nicflix/static/media/cat2.41c290a23d4e8f74dae4.jpg",
+    "static/media/cat1.jpg": "/nicflix/static/media/cat1.f8968374fc658602d6ef.jpg",
+    "static/media/nicflix-logo.png": "/nicflix/static/media/nicflix-logo.f2b7c614c148e288c3b6.png",
+    "index.html": "/nicflix/index.html",
+    "main.62d3213f.css.map": "/nicflix/static/css/main.62d3213f.css.map",
+    "main.bb727324.js.map": "/nicflix/static/js/main.bb727324.js.map",
+    "787.8d32391b.chunk.js.map": "/nicflix/static/js/787.8d32391b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d3213f.css",
+    "static/js/main.bb727324.js"
+  ]
+}
