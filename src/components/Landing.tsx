@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import nicflixLogo from "./images/nicflix-logo.png";
 import cat1 from "./images/cat1.jpg";
@@ -17,25 +16,18 @@ const Landing = (): ReactElement => {
 	};
 
 	return (
-		<Container
-			fluid
-			className="bg-dark text-light d-flex align-items-center justify-content-center vh-100"
-		>
-			<div className="main-content">
-				<Row>
-					<Col>
-						<div className="icon-container text-center">
-							<img src={nicflixLogo} alt="nicflix-logo" />
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<p className="mt-2 text-center fs-5">Who's watching?</p>
-					</Col>
-				</Row>
-				<Row>
-					<Col className="text-center">
+		<div className="bg-dark text-light flex items-center justify-center min-h-screen">
+			<div className="main-content text-center">
+				<div className="flex justify-center">
+					<div className="icon-container">
+						<img src={nicflixLogo} alt="nicflix-logo" />
+					</div>
+				</div>
+				<div className="mt-4">
+					<p className="text-center text-lg">Who's watching?</p>
+				</div>
+				<div className="flex justify-center mt-4">
+					<div className="text-center mx-4">
 						<img
 							className="rounded"
 							src={cat1}
@@ -44,8 +36,8 @@ const Landing = (): ReactElement => {
 							onClick={navToPortfolio}
 						/>
 						<p className="mt-2">Future Employers</p>
-					</Col>
-					<Col className="text-center">
+					</div>
+					<div className="text-center mx-4">
 						<img
 							className="rounded"
 							src={cat2}
@@ -54,10 +46,10 @@ const Landing = (): ReactElement => {
 							onClick={navToRecommendations}
 						/>
 						<p className="mt-2">Friends & Fam</p>
-					</Col>
-				</Row>
+					</div>
+				</div>
 			</div>
-		</Container>
+		</div>
 	);
 };
 

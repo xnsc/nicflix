@@ -1,24 +1,27 @@
 import { ReactElement } from "react";
-import { Container } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import nicflixLogo from "./images/nicflix-logo-small.png";
 
 const RecsNavbar = (): ReactElement => {
 	return (
 		<>
-			<Navbar className="p-4" bg="dark" data-bs-theme="dark">
-				<Navbar.Brand>
+			<nav className="bg-dark p-4">
+				<div className="flex items-center justify-between">
 					<div className="icon-container text-center">
-						<img className="img-fluid" src={nicflixLogo} alt="nicflix-logo" />
+						<img className="h-8" src={nicflixLogo} alt="nicflix-logo" />
 					</div>
-				</Navbar.Brand>
-				<Nav className="me-auto">
-					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#shows">TV Shows</Nav.Link>
-					<Nav.Link href="#movies">Movies</Nav.Link>
-				</Nav>
-			</Navbar>
+					<div className="flex space-x-4">
+						<a href="#home" className="text-light">
+							Home
+						</a>
+						<a href="#shows" className="text-light">
+							TV Shows
+						</a>
+						<a href="#movies" className="text-light">
+							Movies
+						</a>
+					</div>
+				</div>
+			</nav>
 		</>
 	);
 };
