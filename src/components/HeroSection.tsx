@@ -7,15 +7,15 @@ const HeroSection = (): ReactElement => {
 		<div className="h-screen">
 			<div
 				style={{ backgroundImage: `url("${test}")` }}
-				className="bg-cover bg-center bg-no-repeat h-5/6"
+				className="bg-cover bg-center bg-no-repeat h-5/6 relative"
 			>
 				<PortfolioNavbar />
-				<div className="px-8 py-14 md:py-28">
-					<h1 className="text-dark text-3xl md:text-5xl font-bold md:font-black">
-						Testing the header!!!!
+				<div className="absolute bottom-0 left-0 px-8 py-14 md:py-28">
+					<h1 className="text-light text-3xl md:text-5xl font-bold md:font-black">
+						Hi, my name is Nicole!
 					</h1>
-					<p className="text-dark text-lg md:text-2xl font-normal mt-4">
-						Testing the sub header
+					<p className="text-light text-lg md:text-2xl font-normal mt-3">
+						Welcome to my portfolio
 					</p>
 				</div>
 			</div>
