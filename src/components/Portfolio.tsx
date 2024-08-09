@@ -6,7 +6,6 @@ const Portfolio = (): ReactElement => {
 	return (
 		<div className="bg-dark text-light h-max">
 			<HeroSection />
-			<EduRow />
 		</div>
 	);
 };
